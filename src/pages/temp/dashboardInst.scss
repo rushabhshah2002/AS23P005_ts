@@ -1,0 +1,45 @@
+@import "../../index.scss";
+.chartsContianer
+{
+ width: 22%;
+
+ flex-direction: column;
+ @include Tab
+ {
+  width: 100%;
+  flex-direction: row;
+  height: 35%;
+  padding: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+
+ }
+ .chartContiner
+ {
+  height: 30%;
+  width: 100%;
+  @include Tab
+  {
+   height: 100%;
+  width: 30%;
+  }
+ }
+}
+.mainDashboardInst
+{
+ flex-direction: row;
+ @include Tab
+ {
+  flex-direction: column;
+  margin: 0;
+ }
+}
+.certificateContainer
+{
+ width: 70%;
+ @include Tab
+ {
+  width: 100%;
+ }
+}

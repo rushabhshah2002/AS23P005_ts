@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #008080 #e0f2fe;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  
+.navbar
+{
+  z-index: 0 !important;
+}
+  *::-webkit-scrollbar-track {
+    background:transparent;
+
+    
+  }
+  *::-webkit-scrollbar-corner
+  {
+    background-color: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #008080;
+    border-radius: 0px;
+    border: 0px solid #e0f2fe;
+  }
+  *::-webkit-scrollbar-track
+  {
+    display: none;
+  }
+@mixin Tab
+{
+    @media (max-width:900px)
+    {
+        @content;
+    }
+}
+@mixin TabMini
+{
+    @media (max-width:800px)
+    {
+        @content;
+    }
+}
+@mixin Mobile
+{
+    @media(max-width:500px)
+    {
+        @content
+    }
+}
+@mixin Laptop1
+{
+    @media(max-width:1520px)
+    {
+        @content;
+    }
+}
+@mixin Laptop2
+{
+    @media(max-width:1300px)
+    {
+        @content;
+    }
+}
+@mixin Laptop3
+{
+    @media(max-width:1100px)
+    {
+        @content;
+    }
+}
+.popCss
+{
+	width: 30vw;
+	@include Tab
+	{
+		width: 80vw;
+	}
+	@include Mobile
+	{
+		width: 80vw;
+	}
+}
+
+.textLabel
+	{
+        position: absolute;
+		left: 0;
+		right: 0;
+        text-align: center;
+        bottom: -9.4rem;
+	}
+
+html
+{
+    font-size: 10px;
+    @include Laptop1
+    {
+        font-size: 8px;
+    }
+    // @include Mobile
+    // {
+    //     html{
+
+    //         font-size: 10px;
+    //     }
+        
+    // }
+    @include Laptop2
+    {
+        font-size: 7px;
+    }
+    @include Laptop3
+    {
+        font-size: 6px;
+    }
+    @include Tab
+    {
+        font-size: 10px;
+    }
+    @include Mobile
+    {
+        font-size : 6px;
+        // display:none;
+    }
+}
+.App
+{
+    &::-webkit-scrollbar
+    {
+        display: none;
+    }
+}
+
+.styled-checkbox {
+    position: absolute; 
+    opacity: 0;
+  
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+  
+    // Box.
+    & + label:before {
+      content: '';
+      margin-right: 0.5rem;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 2rem;
+      height: 2rem;
+      background: white;
+      border: 0.1rem solid #008080;
+    }
+  
+    // Box hover
+    &:hover + label:before {
+      background: #008080;
+      @include Mobile
+      {
+        background: transparent;
+      }
+    }
+    
+    // Box focus
+  
+    // Box checked
+    &:checked + label:before {
+      background: #008080;
+    }
+    
+    // Disabled state label.
+    &:disabled + label {
+      color: #b8b8b8;
+      cursor: auto;
+    }
+  
+    // Disabled box.
+    &:disabled + label:before {
+      box-shadow: none;
+      background: #ddd;
+    }
+  
+    // Checkmark. Could be replaced with an image
+    &:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 0.5rem;
+      top: 0.9rem;
+      background: white;
+      width: 0.2rem;
+      height: 0.2rem;
+      box-shadow: 
+        0.2rem 0 0 white,
+        0.4rem 0 0 white,
+        0.4rem -0.2rem 0 white,
+        0.4rem -0.4rem 0 white,
+        0.4rem -0.6rem 0 white,
+        0.4rem -0.8rem 0 white;
+      transform: rotate(45deg);
+    }
+  }

@@ -1,0 +1,10 @@
+.scroll
+{
+  overflow-x: scroll;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+.table_span{
+  width: fit-content;
+}

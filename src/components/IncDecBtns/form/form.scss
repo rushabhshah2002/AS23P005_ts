@@ -1,0 +1,74 @@
+@import '../../Variable.scss';
+.form {
+	
+	position: relative;
+	&__field__input {
+		height: 35px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 0 10px;
+		// margin-bottom: 10px;
+	}
+	h4 {
+		font-size: 2.7rem;
+		margin-bottom: 1rem;
+		text-align: center;
+		font-family: sans-serif;
+		letter-spacing: 3px;
+	}
+	input {
+		// font-size: 1.7rem;
+		width: 100%;
+	}
+	&__field__label {
+		display: block;
+		// margin-bottom: 0.5rem;
+		font-size: 1.3rem;
+	
+	}
+	&__date > div {
+		width: 100%;
+	}
+}
+.textControl
+{
+	&::-webkit-scrollbar
+	{
+		display: none;
+	}
+}
+.level3
+{
+	/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #008080 #e0f2fe;
+  }
+
+  /* Chrome, Edge, and Safari */
+  &::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #e0f2fe;
+
+	
+  }
+  &::-webkit-scrollbar-corner
+  {
+	background-color: #e0f2fe;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #008080;
+    border-radius: 10px;
+    border: 6px solid #e0f2fe;
+  }
+  &::-webkit-scrollbar-track
+  {
+	display: none;
+  }//auto prefixer
+
+}

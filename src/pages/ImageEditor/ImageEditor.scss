@@ -1,0 +1,211 @@
+@import "../../index.scss";
+.imageEditor
+{
+    height: 100%;
+    @include Tab
+    {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}
+.parentController
+{
+    width: 22%;
+    height: fit-content;
+    &::-webkit-scrollbar
+    {
+        display: none;
+    }
+    &::-webkit-file-upload-button
+    {
+        display: none;
+        background-color: antiquewhite;
+    }
+    @include Tab
+    {
+        width:100%;
+    }
+}
+.canvasPlayground
+{
+    width: 68vw;
+    height: 83vh;
+    @include Tab
+    {
+        width: 100%;
+        height: 40vh;
+    }
+}
+.onlyForMobile
+{
+    display: none;
+    @include Tab
+    {
+        display: none;
+    }
+    @include Mobile
+    {
+        display: flex;
+    }
+
+}
+.leftLayoutParentComponent
+{
+    display: flex;
+    padding: 0 2rem;
+    @include Tab
+    {
+        padding: 0;
+    }
+    @include Mobile
+    {
+        display: none;
+    }
+}
+.controllers
+{
+
+
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.56);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.56);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.56);
+    width: 20%;
+    height: fit-content;
+    &::-webkit-scrollbar
+    {
+        display: none;
+    }
+    &::-webkit-file-upload-button
+    {
+        display: none;
+        background-color: antiquewhite;
+    }
+    @include Tab
+    {
+        width:100%;
+        box-shadow: none;
+    }
+    
+}
+.bottom
+{
+    display: flex; 
+    @include Tab
+    {
+        display: flex;
+        // border: 0.1rem solid red;
+        flex-direction: column;
+    }
+    @include Mobile
+    {
+        display: none;
+    }
+}
+.forMobileDevices
+{
+    display: none;
+    flex-direction: column;
+    @include Mobile
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+.buttons
+{
+    button
+    {
+
+    }
+}
+.aliasInputTemplate
+{
+    margin-top: 0.3rem;
+    @include Tab
+    {
+        margin-top: 1rem;
+    }
+    
+}
+.canvasDiv
+{
+    height: calc(100% - 0px);
+    width: 75%;
+    * {
+        scrollbar-width: auto;
+        scrollbar-color: #008080 #e0f2fe;
+      }
+    
+      /* Chrome, Edge, and Safari */
+      &::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+      }
+    
+      &::-webkit-scrollbar-track {
+        background: #e0f2fe;
+    
+        
+      }
+      &::-webkit-scrollbar-corner
+      {
+        background-color: transparent;
+      }
+    
+      &::-webkit-scrollbar-thumb {
+        background-color: #008080;
+        border-radius: 10px;
+        border: 0px solid #e0f2fe;
+      }
+      &::-webkit-scrollbar-track
+      {
+        display: none;
+      }
+    @include Tab
+    {
+        width: 100%;
+    }
+}
+.sideBarIE
+{
+    transition:1s ease-in-out;
+    position: absolute;
+    width: 6.9rem;
+    right:0;
+    // @include Tab
+    // {
+    //     width: 6.9rem;
+    // }
+    @include Mobile
+    {
+        width: 0rem;
+        right: -9rem;
+    }
+    @include Tab
+    {
+        width: 0rem;
+        right: -9rem;
+    }
+    .itemIE
+    {
+        transition: 0.1s ease-in-out;
+    }
+    .itemIE:hover
+    {
+        background-color:rgb(125,211,252);
+        
+    }
+    .forTouchScreenIE{
+        display: none;
+        @include Mobile
+        {
+            display: flex;
+        }
+        @include Tab
+        {
+            display: flex;
+        }
+    }
+}

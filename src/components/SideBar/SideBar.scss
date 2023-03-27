@@ -1,0 +1,48 @@
+@import "../../index.scss";
+.sideBar
+{
+    .poweredBy
+    {
+        transition: 0.8s all ease-in-out;
+    }
+    transition:1s ease-in;
+    position: absolute;
+    width: 7.2rem;  
+    right:0;
+    height: calc(100vh - 3.9rem);
+    z-index: 9;
+    // @include Tab
+    // {
+    //     width: 6.9rem;
+    // }
+    @include Mobile
+    {
+        width: 0rem;
+        right: -2rem;
+    }
+    @include Tab
+    {
+        width: 0rem;
+        right: -2rem;
+    }
+    .item
+    {
+        transition: 0.1s ease-in-out;
+    }
+    .item:hover
+    {
+        background-color:rgb(125,211,252);
+        
+    }
+    .forTouchScreen{
+        display: none;
+        @include Mobile
+        {
+            display: flex;
+        }
+        @include Tab
+        {
+            display: flex;
+        }
+    }
+}

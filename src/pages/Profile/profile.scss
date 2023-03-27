@@ -1,0 +1,231 @@
+@import "../../index.scss";
+.mainEP
+{
+    height: calc(100% - 3.9rem);
+}
+.masterEP
+{
+    @include Tab
+    {
+        align-items: center;
+        flex-direction: column;
+
+    }
+    @include Mobile
+    {
+        align-items: center;
+        flex-direction: column;
+
+    }
+}
+.left_part_EP
+{
+    width: 22%;
+    @include Tab{
+        width: 90%;
+    }
+    @include Mobile{
+        width: 90%;
+    }
+}
+.editProfile
+{
+    .head_container
+    {
+        .container_left
+        {
+            width: 25%;
+            @include Tab
+            {
+                width: 100%;
+            }
+            @include Mobile
+            {
+                width: 100%;
+            }
+        }
+        display: flex;
+        // flex-direction: column;
+        @include Mobile
+        {
+            flex-direction: column;
+        }
+        @include Tab
+        {
+            flex-direction: column;
+        }
+        .sub1_container_left{
+            width: 100%;
+            
+            height: fit-content;
+            .details_sub2_container_left
+            {
+                gap: 2rem;
+                @include Tab
+                {
+                    gap: 1.5rem;
+                }
+            }
+            
+            @include Tab
+            {
+                width: 100%;
+                height:fit-content;
+                // border: 1px solid red;
+            }
+        }
+        .container_right{
+            .sub0_contianer_right
+            {
+                height: 100%;
+                padding: 2rem;
+                max-height: calc(100vh - 3.9rem);
+                // width: 70%;
+                @include Tab
+                {
+                    align-items: center;
+                    height: fit-content;
+                    width: 100%;
+                }
+                .card
+                {
+//                     -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+// -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+// box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+                }
+                .sub1_container_right
+                {
+                    // h-[62rem]
+                    
+                    height: calc(100% - 0px);
+                    // p-[5rem]
+                    padding: 5rem;
+                    @include Tab
+                    {
+                        padding: 1rem;
+                        height: 30rem;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    @include Mobile
+                    {
+                        height: 30rem;
+                    }
+                    &::-webkit-scrollbar
+                    {
+                        display: none;
+                    }
+                    .card_sub2_container_right
+                    {
+                        width: 45%;
+                        @include Mobile
+                        {
+                            width: 90%;
+                        }
+                        @include Tab
+                        {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.affliates
+{
+    justify-content: start;
+    @include Tab
+    {
+        justify-content: center;
+    }
+    @include Mobile
+    {
+        justify-content: center;
+    }
+}
+.container_right{
+ width: 74%;
+ @include Tab
+ {
+     width: 100%;
+     align-items: center;
+     flex-direction: column;
+     align-items: center;
+ }
+ .sub0_contianer_right
+ {
+     height: 100%;
+     padding: 2rem;
+     max-height: calc(100vh - 3.9rem);
+     // width: 70%;
+     @include Tab
+     {
+         align-items: center;
+         height: fit-content;
+         width: 90%;
+     }
+     .card
+     {
+//                     -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+// -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+// box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+     }
+     .sub1_container_right
+     {
+         // h-[62rem]
+         
+         height: 66rem;
+         // p-[5rem]
+         padding: 5rem;
+         @include Tab
+         {
+             padding: 1rem;
+             height: 46rem;
+             align-items: center;
+             justify-content: center;
+         }
+         @include Mobile
+         {
+             height: 50rem;
+         }
+         &::-webkit-scrollbar
+         {
+             display: none;
+         }
+         .card_sub2_container_right
+         {
+             width: 47%;
+             @include Mobile
+             {
+                 width: 90%;
+             }
+             @include Tab
+             {
+                 width: 90%;
+             }
+         }
+     }
+ }
+}
+.popup
+{
+    
+}
+.sub0_container_left
+{
+    height: calc(100vh - 3.9rem);   
+    // py-[6rem]
+    //px-[1.8rem]
+    padding: 6rem 1.8rem;
+    // justify-content: space-between;
+
+    @include Tab
+    {
+        height: fit-content;
+        // height: 60vh;
+        padding: 3rem;
+        gap: 5rem;
+        justify-content: space-around;
+    }
+}

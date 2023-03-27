@@ -1,0 +1,49 @@
+@import "../../index.scss";
+.logoText
+{
+ font-size: 3rem;
+ @include Mobile
+ {
+  font-size:2rem;
+ }
+
+}
+.span_flex
+{
+ display: flex;
+ @include Tab
+ {
+  display: none;
+ }
+ @include Mobile
+ {
+  display: none;
+ }
+}
+.notForMobile
+{
+ display: flex;
+ @include Mobile
+ {
+  display: none;
+ }
+}
+.forMobile
+{
+ display: none;
+ @include Mobile
+ {
+  display: flex;
+ }
+}
+.leftNav
+{
+ @include Tab
+ {
+  flex-direction: column;
+ }
+ @include Mobile
+ {
+  flex-direction: column;
+ }
+}

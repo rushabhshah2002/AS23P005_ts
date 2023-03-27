@@ -1,0 +1,31 @@
+@import "../../index.scss";
+
+@include Tab {
+
+    .main {
+        padding: 100rem;
+
+        
+    }
+}
+.login
+{
+    height: calc(100% - 3.9rem);
+}
+.rightPartLogin {
+    width: 30%;
+    @include Tab
+    {
+        width: 90%;
+    }
+    @include Mobile
+    {
+        width: 80%;
+    }
+    background: rgba( 255, 255, 255, 0.7 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

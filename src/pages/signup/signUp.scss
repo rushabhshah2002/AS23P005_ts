@@ -1,0 +1,99 @@
+@import "../../index.scss";
+.main
+{
+    background-image: url('../../assets/login3.jpeg');
+    background-repeat: no-repeat;
+    height: calc(100% - 3.9rem);
+    background-size:cover;
+    overflow: scroll;
+    .right
+    {
+
+        background: rgba( 255, 255, 255, 0.7 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        height: 62.4rem;
+        width: 30%;
+        // height: 100%;
+
+
+    }
+    .right_left
+    {
+
+        background: rgba( 255, 255, 255, 0.7 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+        height: fit-content;
+        width: 30%;
+        // height: 100%;
+
+
+    }
+    .left
+    {
+        height: 100%;
+        width: 60%;
+        @include Tab
+        {
+            width: 80%;
+        }
+
+    }
+
+}
+@include Tab
+{
+    .main
+    {
+        padding: 0px 0;
+        // height: fit-content;
+        display: flex;
+        overflow: scroll;
+        flex-direction:column-reverse;
+        .left{
+            // width: 100%;
+            flex: 1;
+            align-items: center;
+            padding: 0; 
+
+            .detail
+            {
+                // padding: 0;
+                padding-bottom: 2rem;
+                p
+                {
+                    font-size: 4rem;
+                }
+                button
+                {
+                    font-size: 3rem;
+                }
+            }
+        }
+        .right
+        {
+            height: fit-content;
+            gap: 0;
+            
+            width: 80%;
+            padding: 5em 5rem;
+            padding-top: 0;
+            // height: 100vh;
+        }
+
+    }
+}
+.green
+{
+    background-image: url();
+    background-size: contain;
+}

@@ -1,0 +1,349 @@
+@import "../../index.scss";
+
+
+.cretiDetailsCC {
+    height: 20rem;
+}
+
+.headCC {
+    -webkit-box-shadow: 0px 0px 53px -23px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 0px 53px -23px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 0px 53px -23px rgba(0, 0, 0, 0.18);
+    // display: none;
+    //w-[100%] h-fit
+    width: fit-content;
+    // height:fit-content;
+    height: 100%;
+
+    .overLey {
+        display: none;
+    }
+
+    @include Tab {
+        // width: 20rem;
+        // flex: 1;
+        min-width: 35vw;
+
+    }
+
+    @include Mobile {
+        // width: 20rem;
+        // flex: 1;
+
+        height: fit-content;
+        width: 45%;
+
+    }
+
+}
+
+.headCC:hover {
+
+    .overLey {
+        display: flex;
+
+        @include Tab {
+            display: none;
+        }
+
+        @include Mobile {
+            display: none;
+        }
+    }
+
+}
+.masterCC
+{
+    height: 100%;
+    @include Tab
+    {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: fit-content;
+        
+    }
+    @include Mobile
+    {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: fit-content;
+
+    }
+}
+.mainCC {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+
+    @include Tab {
+        overflow: scroll;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include Mobile {
+        overflow: scroll;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+.optionButtonsCC
+{
+    flex-direction: column;
+    @include Tab
+    {
+        flex-direction: row;
+    }
+    @include Mobile
+    {
+        flex-direction: row;
+    }
+}
+.selectedTemplate
+{
+    height: 85vh;
+    width: 86%;
+    @include Tab
+    {
+        height: auto;
+        width: 80vw;
+        
+    }
+    @include Mobile
+    {
+        height: auto;
+        width: 80vw;
+
+    }
+}
+.scroller {
+    overflow-y: scroll;
+    // &::-webkit-scrollbar
+    // {
+    //     display: none;
+    // }
+    flex-direction: column;
+    width: 100%;
+    max-height:78vh;
+
+    * {
+        scrollbar-width: auto;
+        scrollbar-color: #008080 #e0f2fe;
+    }
+
+    /* Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+        width: 16px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #e0f2fe;
+
+
+    }
+
+    &::-webkit-scrollbar-corner {
+        background-color: #ffff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #008080;
+        border-radius: 10px;
+        border: 6px solid #e0f2fe;
+    }
+
+    &::-webkit-scrollbar-track {
+        display: none;
+    }
+
+    @include Tab {
+        overflow-x: scroll;
+        flex-direction: row;
+        max-width: 80vw;
+        min-width: 80vw;
+        height: fit-content;
+    }
+
+    @include Mobile {
+        overflow-x: scroll;
+        flex-direction: row;
+        max-width: 80vw;
+        min-width: 80vw;
+        height: fit-content;
+    }
+}
+
+.templateSelector {
+    display: none;
+
+    @include Tab {
+        display: flex;
+        justify-content: center;
+    }
+
+    @include Mobile {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.previewSelector {
+    display: none;
+
+    @include Tab {
+        display: flex;
+    }
+
+    @include Mobile {
+        display: flex;
+    }
+}
+.createCertificate
+{
+    height: 100%;
+}
+.PreviewCC {
+    height: calc(100% - 0vh);
+    width: 90%;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.imgSelector {
+    max-width: 80%;
+
+    @include Tab {
+        max-height: 60%;
+        width: auto;
+
+    }
+}
+
+.createCertiImg {
+    display: flex;
+
+    @include Tab {
+        // flex-direction: ;
+        flex-wrap: wrap;
+
+        img {
+            width: 40rem;
+        }
+    }
+}
+
+.leftCC {
+    width: 22%;
+    padding: 0 3rem;
+    height: 100%;
+    gap: 2rem;
+    @include Tab {
+        height: fit-content;
+        width: 90%;
+        padding-top: 2rem;
+        gap: 0;
+    }
+    @include TabMini {
+        height: fit-content;
+        width: 90%;
+        padding-top: 0rem;
+        gap: 0;
+    }
+
+    @include Mobile {
+        width: 90%;
+        height: 100%;
+        padding-top: 2rem;
+        gap: 0;
+    }
+}
+
+.colage {}
+
+.bottomCreateCertificate {
+    @include Tab {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    @include Mobile {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+.header
+{
+    width :96%;
+    @include Tab
+    {
+        width: 100%;
+    }
+    @include Mobile
+    {
+        width: 100%;
+    }
+}
+.controllerCC
+{
+    width: 11%;
+    padding: 1.3rem;
+    height: 100%;
+    @include Tab{
+        width: 100%;
+        height: fit-content;
+    }
+    @include Mobile{
+        height: fit-content;
+        width: 100%;
+    }
+}
+.createCertificateOptions
+{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    height: 100%;
+    button
+    {
+        width: 100%;
+    }
+    label
+    {
+        width: 100%;
+    }
+    @include Tab
+    {
+        flex-direction: row;
+        justify-content: center;
+        height: fit-content;
+        width: 70%;
+    }
+    @include Mobile
+    {
+        flex-direction: row;
+        justify-content: center;
+        height: fit-content;
+        width: 70%;
+    }
+}
+.rightCC
+{
+    width : 71.2%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include Tab{
+        width: 90%;
+        height: fit-content;
+        flex-direction: column;
+    }
+    @include Mobile{
+        width: 90%;
+        height: fit-content;
+        flex-direction: column;
+    }
+}

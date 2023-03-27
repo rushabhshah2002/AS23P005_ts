@@ -1,0 +1,10 @@
+@import "../../index.scss";
+.inputLabelForm
+{
+    width: calc(40vw - 2.5rem);
+    @include Tab
+    {
+        width: calc(80vw - 2.5rem);
+    }
+
+}

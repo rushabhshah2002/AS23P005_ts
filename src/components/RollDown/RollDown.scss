@@ -1,0 +1,9 @@
+@import "../../index.scss";
+.mainRollDown
+{
+ flex-direction: column;
+ @include Tab
+ {
+  flex-direction: row;
+ }
+}

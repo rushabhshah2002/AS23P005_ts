@@ -1,0 +1,174 @@
+@import "../index.scss";
+.main123 {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+
+    @include Mobile {
+        display: flex;
+
+        .detiling {
+            text-align: center;
+        }
+
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid green;
+    }
+
+    @include Tab {
+        display: flex;
+
+        .detiling {
+            text-align: center;
+        }
+
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid green;
+    }
+}
+.customLevel1PrimaryCss
+{
+    gap: 2rem;
+    @include Tab
+    {
+        gap: 0;
+    }
+    @include Mobile
+    {
+        gap: 0;
+    }
+}
+.dark {
+    flex-direction: row-reverse;
+
+    @include Tab {
+        flex-direction: column;
+    }
+
+    @include Mobile {
+        flex-direction: column;
+    }
+}
+
+.labelUp {
+    color: rgb(0 0 0 / 100%) !important;
+    transform: translateY(-1.5rem);
+
+    @include Tab {
+        transform: translateY(-2.6rem);
+    }
+}
+
+.primaryLabelCss {
+    padding: 0 0.6rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: .4rem;
+    left: 1rem;
+    transition: all .3s ease-in-out;
+    color: rgb(0 0 0 / 40%);
+    background-color: transparent;
+
+    @include Tab {
+        font-size: 1.6rem;
+        top: .8rem;
+    }
+}
+
+.level2PrimaryCssForLoginSignup
+{
+    height: 50rem;
+    @include Tab
+    {
+        height: 57rem;
+    }
+    @include Mobile
+    {
+        height: 57rem;
+    }
+}
+.textFieldAliasIE {
+    outline: none;
+
+    @include Tab {
+        margin-bottom: 0.5rem;
+
+    }
+
+    @include Mobile {
+        margin-bottom: 0.5rem;
+        
+    }
+}
+
+.primaryInputCss::-webkit-outer-spin-button , .primaryInputCss::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #000;
+  -webkit-text-fill-color: rgb(12 74 110 / 100%);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.primaryInputCss {
+
+
+    font-size: 1.5rem;
+
+    @include Tab {
+        padding: 1rem !important;
+        // font-size: rem;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+
+
+.primaryButtonCss {
+    font-size: 1.5rem;
+
+    @include Tab {
+        font-size: 3rem;
+        border-radius: 13px;
+    }
+}
+
+.shortInputs {
+    // display: none;
+    width: 6vw;
+    background-color: transparent;
+    outline: none;
+
+    @include Tab {
+        width: 14vw;
+    }
+}
+
+.dynamicFormCssMasterCss {
+    height: 40vh;
+    display: none;
+
+    @include Tab {
+        height: 20vh;
+    }
+}
